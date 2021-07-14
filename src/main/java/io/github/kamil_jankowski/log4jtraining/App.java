@@ -5,15 +5,15 @@ import org.apache.logging.log4j.Logger;
 
 public class App
 {
-    private static final Logger logger = LogManager.getLogger(App.class);
+    private static final Logger LOGGER = LogManager.getLogger(App.class);
 
     public static void main( String[] args ) {
         System.out.println( "Hello World!" );
-        logger.trace("We've just greeted the user!");
-        logger.debug("We've just greeted the user!");
-        logger.info("We've just greeted the user!");
-        logger.warn("We've just greeted the user!");
-        logger.error("We've just greeted the user!");
-        logger.fatal("We've just greeted the user!");
+        LOGGER.trace("Trace just greeted the user!");
+        LOGGER.debug("Debug just greeted the user!");
+        LOGGER.info("Info just greeted the user!");
+        LOGGER.warn("Warn just greeted the user!");
+        LOGGER.error("Error just greeted the user!");
+        LOGGER.fatal("Fatal just greeted the user!");
     }
 }
